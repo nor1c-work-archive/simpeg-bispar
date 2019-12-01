@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+body {
+   /* transform: scale(1.1);
+   transform-origin: 0 0; */
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #636363;
+    border-radius: 30px;
+}
+
+.bg-primary {
+    background-color: rgb(48, 133, 214) !important;
+    border: solid 1px rgb(48, 133, 214) !important;
+}
+
+.btn-primary {
+    background-color: rgb(48, 133, 214) !important;
+    border: solid 1px rgb(48, 133, 214) !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(48, 133, 214) !important;
+    border: solid 1px rgb(48, 133, 214) !important;
+}
+
+header {
+    background: url('../images/menus/header/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    /* display: inline-block; */
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 10px;
+}
+
+/* header .header-logo {
+    width: 3%;
+    float: left;
+    margin: 0px 35px 0 20px;
+}
+
+header .header-md-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+} */
+
+footer {
+    border: solid 1px rgb(48, 133, 214);
+    background-color: rgb(48, 133, 214);
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.master-container {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.dashboard-left {
+    width: 80%;
+    float: left;
+    border: solid 1px #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dashboard-left > ul {
+    display: inline-block;
+    padding-left: 0;
+    left: 0;
+    margin: 0;
+}
+
+.dashboard-left > ul li {
+    list-style: none;
+    float: left;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 15px;
+    border-radius: 3px;
+    margin: 10px;
+    margin-left: 0;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.dashboard-left > ul li:hover {
+    background-color: #eee;
+    border: solid 1px #eee;
+    transition: 0.4s all;
+}
+
+.dashboard-left img {
+    width: 150px;
+}
+
+#content {
+    width: 100%;
+    border: solid 1px #ccc;
+    border-top: none !important;
+    background-color: #fff;
+    padding: 15px;
+}
+
+#content .action-button {
+    width: 100%;
+}
+
+#content .action-button > ul {
+    display: inline-block;
+    padding-left: 0;
+    left: 0;
+    margin: 0;
+}
+
+#content .action-button > ul li {
+    list-style: none;
+    float: left;
+    background-color: rgb(48, 133, 214);
+    border: solid 1px rgb(48, 133, 214);
+    padding: 6px 15px;
+    border-radius: 3px;
+    margin-right: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+#content .action-button > ul li:hover {
+    background-color: rgb(33, 95, 136);
+    border: solid 1px rgb(33, 95, 136);
+    transition: 0.4s all;
+}
+
+#content .content-section {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#content .filters {
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#content .filter-search {
+    float: left;
+}
+
+#content .filter-order {
+    float: right;
+}
+
+#content .table-content {
+    margin-top: 3px;
+}
+
+#content .pagination-section {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#content .pagination {
+    /* float: left; */
+}
+
+#content .total-records {
+    float: right;
+}
+
+#tableContainer {
+    padding: 20px;
+    border: solid 1px #eee;
+}
+
+table.dataTable.select tbody tr,
+table.dataTable thead th:first-child {
+  cursor: pointer;
+}
+
+.selected {
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+input[type='checkbox'] {
+    background-color: #eee; 
+    width:15px;
+    height:15px;
+    border-radius: 3px;
+    border: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    transition: all 0.5s ease;
+}
+
+input[type='checkbox']:checked {
+    background-color: rgb(109, 109, 109);
+    transition: all 0.5s ease;
+}
+
+#automaticTable tr:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.actionButton {
+    cursor: pointer;
+}
+
+#formFieldset {
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#formFieldset.noFieldset {
+    border: none;
+    margin-top: 0;
+}
+
+#formFieldset legend {
+    font-size: 12px;
+    border: solid 1px #eee;
+    padding: 3px 10px;
+    width: 300px;
+    font-weight: 500;
+}
+
+#formFieldset .form-control {
+    width: 400px;
+}
+
+#formFieldset .tdLegend {
+    width: 250px;
+}
+
+#formFieldset table {
+    border: none !important;
+}
+
+#userForm {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#userForm .picture {
+    width: 21%;
+    border: solid 1px #eee;
+    padding: 10px;
+    float:left;
+    text-align: center;
+}
+
+#userForm .form {
+    width: 78%;
+    border: solid 1px #eee;
+    float: right;
+    padding: 10px;
+}
+
+#detailFieldset {
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#detailFieldset.noFieldset {
+    border: none;
+    margin-top: 0;
+}
+
+#detailFieldset legend {
+    font-size: 12px;
+    border: solid 1px #eee;
+    padding: 3px 10px;
+    width: 150px;
+    font-weight: 500;
+}
+
+#detailFieldset .form-control {
+    width: 500px;
+}
+
+#detailFieldset .tdLegend {
+    width: 200px;
+}
+
+#detailFieldset table {
+    border: none !important;
+}
+
+#detailContainer {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+#detailContainer .picture {
+    width: 21%;
+    border: solid 1px #eee;
+    padding: 10px;
+    float:left;
+    text-align: center;
+}
+
+#detailContainer .form {
+    width: 78%;
+    border: solid 1px #eee;
+    float: right;
+    padding: 10px;
+}
